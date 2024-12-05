@@ -1,13 +1,19 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+
 #menu img {
     height: 32px;
     width: 32px;
-    margin-right: 1040px;
+    margin-right: 952px;
 }
 
 #menu nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 20px 30px;
+    margin: 20px 30px;
 }
 
 #menu nav a {
@@ -15,8 +21,29 @@
     margin-right: 40px;
 }
 
-#intro {
-    align-content: left;
+th h1 {
+    font-size: 50px;
+    padding-right: 70px;
+    margin-right: 70px;
+}
+
+th h2 {
+    font-size: 30px;
+    word-spacing: 4px;
+    padding-left: 70px;
+    margin-left: 70px;
+}
+
+th img {
+    height: 32px;
+    width: 32px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px 50px 300px;
+    margin: 10px 50px 300px;
 }
 
 
@@ -32,7 +59,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 30px;
+    margin: 20px 30px;
 }
 
 /* footer */
