@@ -1,0 +1,48 @@
+#menu img {
+    height: 32px;
+    width: 32px;
+    margin-right: 1040px;
+}
+
+#menu nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu nav a {
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+#intro {
+    align-content: left;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* footer */
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+/* footer */
+.socials a {
+    text-decoration: none;
+}
+
