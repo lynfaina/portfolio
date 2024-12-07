@@ -21,6 +21,13 @@
     margin-right: 40px;
 }
 
+table {
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px 50px 300px;
+    margin: 10px 50px 300px;
+}
+
 th h1 {
     font-size: 50px;
     padding-right: 70px;
@@ -37,23 +44,88 @@ th h2 {
 th img {
     height: 32px;
     width: 32px;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
-table {
-    border-collapse: collapse;
-    text-align: left;
-    padding: 10px 50px 300px;
-    margin: 10px 50px 300px;
+th h3 {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
+th h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+ul {
+    padding-top: 0px;
+    margin-top: 0px;
+}
 
+li {
+    font-size: 17px;
+    padding-right: 70px;
+    margin-right: 70px;
+    line-height: 25px;
+}
 
+td a {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: #000000;
+}
 
+td a img[src*='right-up'] {
+    height: 17px;
+    width: 17px;
+}
 
+td img[src*='flowerpainting'] {
+    width: 500px;
+    height: 420px;
+    padding-left: 50px;
+    margin-left: 50px;
+}
 
+.custom-line {
+    border: none;
+    width: 1225px;
+    height: 2px;
+    background-color: #000000;
+}
 
+li a[href*='cole-469833499'] {
+    text-decoration: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
+td img[src*='songcoverthbn.png'] {
+    width: 525px;
+    height: 290px;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+td img[src*='dancethumbnail.png'] {
+    width: 240px;
+    height: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
 
 .footer-container {
     display: flex;
@@ -63,6 +135,10 @@ table {
     margin: 20px 30px;
 }
 
+.footer-container h3 {
+    color: #0000ff;
+}
+
 /* footer */
 .socials {
     display: flex;
@@ -70,6 +146,10 @@ table {
 }
 
 /* footer */
+.socials a h3 {
+    color: #000000;
+}
+
 .socials a {
     text-decoration: none;
 }
