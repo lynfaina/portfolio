@@ -1,5 +1,6 @@
 * {
     font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc;
 }
 
 #menu img {
@@ -17,6 +18,7 @@
 }
 
 #menu nav a {
+    color:#000000;
     text-decoration: none;
     margin-right: 40px;
 }
@@ -142,5 +144,7 @@ td img[src*='dancethumbnail.png'] {
 
 .socials a {
     text-decoration: none;
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
