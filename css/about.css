@@ -23,21 +23,50 @@
     margin-right: 40px;
 }
 
-#intro h1 {
-    font-size: 80px;
-    padding-right: 70px;
-    margin-right: 70px;
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: left;
+    padding: 0px 10px 0px 30px;
+    margin: 0px 0px 0px 30px;
+}
+
+img {
+    width: 420px;
+    height: 520px;
+}
+
+.image-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.profile-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 70px;
+    margin-left: 176px;
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 17px;
-    line-height: 25px;
+    line-height: 35px;
+    padding-top: 0px;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-left: 30px;
 }
 
 .skills-wrapper {
     display: flex;
-    align-items: center;
-    gap: 80px;
+    align-items: baseline;
+    gap: 50px;
 }
 
 .skills p {
@@ -45,39 +74,14 @@ p {
     text-decoration: underline;
 }
 
-#intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 20px;
+.custom-line {
+    border: none;
+    width: 1245px;
+    height: 2px;
+    background-color: #000000;
+    margin-left: 60px;
+    text-align: left;
 }
-
-.text-section {
-    flex: 3;
-}
-
-.img-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.img-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .footer-container {
     display: flex;

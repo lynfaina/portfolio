@@ -100,7 +100,7 @@ td img[src*='flowerpainting'] {
 }
 
 li a[href*='cole-469833499'] {
-    text-decoration: none;
+    text-decoration: underline;
     padding: 0px;
     margin: 0px;
 }
