@@ -23,6 +23,13 @@
     margin-right: 40px;
 }
 
+.container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 250px;
+    box-sizing: border-box;
+}
+
 h1 {
     font-size: 60px;
     text-align: left;
@@ -30,52 +37,16 @@ h1 {
     margin: 0px 0px 0px 30px;
 }
 
-.container {
-    display: flex;
-    justify-content: flex-start;
-    gap: 310px;
-    box-sizing: border-box;
-}
-
-form {
+.submit-container {
     width: 100%; /* Full width form */
     max-width: 400px; /* Limits form width */
-    background-color: #ffffff;
-    border: 12px solid #ffffff;
-    border-radius: 10px;
 }
-  
-label {
-    font-size: 17px;
-    font-weight: bold;
-    background-color: #ffffff;
-}
-  
-input, textarea {
-    width: 300px;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
-  
-button {
-    font-size: 17px;
-    font-weight: bold;
-    width: 300px;
-    padding: 10px;
-    background-color: #000;
-    color: #000;
-    border: solid;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #ffffff;
-}
-  
-button:hover {
-    background-color: #444;
+
+h2 {
+    font-size: 60px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 170px;
 }
 
 .custom-line {
