@@ -38,8 +38,8 @@ h1 {
 }
 
 .submit-container {
-    width: 100%; /* Full width form */
-    max-width: 400px; /* Limits form width */
+    width: 100%;
+    max-width: 400px; 
 }
 
 h2 {
