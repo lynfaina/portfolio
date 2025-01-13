@@ -1,8 +1,11 @@
+/* body */
+/* default font */
 * {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5dc;
 }
 
+/* menu icon */
 #menu img {
     height: 32px;
     width: 32px;
@@ -23,6 +26,7 @@
     margin-right: 40px;
 }
 
+/* body */
 table {
     border-collapse: collapse;
     text-align: left;
@@ -30,12 +34,14 @@ table {
     margin: 10px 50px 300px;
 }
 
+/* portfolio user's name */
 th h1 {
     font-size: 50px;
     padding-right: 70px;
     margin-right: 70px;
 }
 
+/* portfolio user's introduction */
 th h2 {
     font-size: 30px;
     word-spacing: 4px;
@@ -43,6 +49,7 @@ th h2 {
     margin-left: 70px;
 }
 
+/* arrow icon */
 th img {
     height: 32px;
     width: 32px;
@@ -50,22 +57,26 @@ th img {
     margin-top: 20px;
 }
 
+/* highlight */
 th h3 {
     font-size: 20px;
     padding-top: 20px;
     margin-top: 20px;
 }
 
+/* arts and design */
 th h4 {
     padding: 20px 0px;
     margin: 20px 0px;
 }
 
+/* list of description */
 ul {
     padding-top: 0px;
     margin-top: 0px;
 }
 
+/* description */
 li {
     font-size: 17px;
     padding-right: 70px;
@@ -73,6 +84,7 @@ li {
     line-height: 25px;
 }
 
+/* link to see more */
 td a {
     display: inline-block;
     padding: 20px 0px 100px;
@@ -80,6 +92,7 @@ td a {
     color: #000000;
 }
 
+/* right-up arrow icon */
 td a img[src*='right-up'] {
     height: 17px;
     width: 17px;
@@ -99,6 +112,7 @@ td img[src*='flowerpainting'] {
     background-color: #000000;
 }
 
+/* soundcloud click link */
 li a[href*='cole-469833499'] {
     text-decoration: underline;
     padding: 0px;
@@ -119,6 +133,7 @@ td img[src*='dancethumbnail.png'] {
     margin: 50px 50px 0px;
 }
 
+/* footer */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -127,17 +142,17 @@ td img[src*='dancethumbnail.png'] {
     margin: 20px 30px;
 }
 
+/* portfolio user's name */
+/* date published */
 .footer-container h3 {
     color: #0000ff;
 }
 
-/* footer */
 .socials {
     display: flex;
     gap: 10px;
 }
 
-/* footer */
 .socials a h3 {
     color: #000000;
 }

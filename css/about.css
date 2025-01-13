@@ -1,8 +1,11 @@
+/* body */
+/* default font */
 * {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5dc;
 }
 
+/* menu icon */
 #menu img {
     height: 32px;
     width: 32px;
@@ -23,11 +26,13 @@
     margin-right: 40px;
 }
 
+/* body */
 table {
     width: 100%;
     table-layout: fixed;
 }
 
+/* opening greetings */
 h1 {
     font-size: 60px;
     text-align: left;
@@ -35,6 +40,7 @@ h1 {
     margin: 0px 0px 0px 30px;
 }
 
+/* operator's profile picture */
 img {
     width: 420px;
     height: 520px;
@@ -54,6 +60,7 @@ img {
     margin-bottom: 20px;
 }
 
+/* about the user */
 p {
     font-size: 17px;
     line-height: 35px;
@@ -83,6 +90,7 @@ p {
     text-align: left;
 }
 
+/* footer */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -91,17 +99,17 @@ p {
     margin: 20px 30px;
 }
 
+/* portfolio user's name */
+/* date published */
 .footer-container h3 {
     color: #0000ff;
 }
 
-/* footer */
 .socials {
     display: flex;
     gap: 10px;
 }
 
-/* footer */
 .socials a h3 {
     color: #000000;
 }

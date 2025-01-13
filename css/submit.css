@@ -1,8 +1,11 @@
+/* body */
+/* default font */
 * {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5dc;
 }
 
+/* menu icon */
 #menu img {
     height: 32px;
     width: 32px;
@@ -30,6 +33,7 @@
     box-sizing: border-box;
 }
 
+/* opening greetings */
 h1 {
     font-size: 60px;
     text-align: left;
@@ -42,6 +46,7 @@ h1 {
     max-width: 400px; 
 }
 
+/* after submission message */
 h2 {
     font-size: 60px;
     text-align: left;
@@ -58,6 +63,7 @@ h2 {
     text-align: left;
 }
 
+/* footer */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -66,17 +72,17 @@ h2 {
     margin: 20px 30px;
 }
 
+/* portfolio user's name */
+/* date published */
 .footer-container h3 {
     color: #0000ff;
 }
 
-/* footer */
 .socials {
     display: flex;
     gap: 10px;
 }
 
-/* footer */
 .socials a h3 {
     color: #000000;
 }
