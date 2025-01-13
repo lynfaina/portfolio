@@ -5,6 +5,17 @@
     background-color: #f5f5dc;
 }
 
+.attribute-credit {
+    display: none;
+}
+
+/* fixed while scrolling */
+#menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
 /* menu icon */
 #menu img {
     height: 32px;
@@ -30,8 +41,8 @@
 table {
     border-collapse: collapse;
     text-align: left;
-    padding: 10px 50px 300px;
-    margin: 10px 50px 300px;
+    padding: 120px 50px 300px;
+    margin: 120px 50px 300px;
 }
 
 /* portfolio user's name */

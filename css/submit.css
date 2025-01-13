@@ -5,6 +5,10 @@
     background-color: #f5f5dc;
 }
 
+.attribute-credit {
+    display: none;
+}
+
 /* menu icon */
 #menu img {
     height: 32px;
