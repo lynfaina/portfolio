@@ -27,7 +27,11 @@
       <main>
       <!-- form to send to operator's email -->
         <div class="form-container">
-          <form action="./submit.html" method="POST">
+          <!-- <form action="./submit.hmtl" method="POST" id="contact-form"> -->
+          <!-- Formspree for submitting the form -->
+          <!-- <form action="https://formspree.io/f/xnnjepeb" method="POST"> -->
+          <!-- EmailJS for submitting the form -->
+          <form id="contact-form">
             <label for="name">First Name</label>
             <br>
             <input type="text" name="name" id="name" pattern="[a-zA-Z]+">
@@ -54,7 +58,26 @@
     </section>
 
     <hr class="custom-line">
+    
+    <!-- EmailJS for submitting the form  -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script>
+        (function() {
+        emailjs.init("twiW0wxiSPtPt9dwL"); // EmailJS User ID
+        })();
 
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent dafault form submission
+
+          emailjs.sendForm("service_exo1o3w", "template_2bz9tsp", this) // EmailJS Service and Template ID
+            .then(function(response) {
+              // Redirect to submit.html after successful submission
+              window.location.href = "./submit.html"
+            }, function(error) {
+              alert("Oops! Something went wrong.");
+            });
+        });
+      </script>
   </body>
   
   <!-- contact information -->
