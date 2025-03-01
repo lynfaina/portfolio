@@ -60,20 +60,29 @@
     <hr class="custom-line">
     
     <!-- EmailJS for submitting the form  -->
+    <!-- EmailJS SDK from a CDN (Content Delivery Network)-->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
       <script>
+        // Immediately Invoked Function Expression (IIFE)
+        // Initialize EmailJS with the User ID
         (function() {
         emailjs.init("twiW0wxiSPtPt9dwL"); // EmailJS User ID
         })();
 
+        // Attach event listener to the form
         document.getElementById("contact-form").addEventListener("submit", function(event) {
+          // Prevents the form from submitting the traditional way (which would reload the page)
           event.preventDefault(); // Prevent dafault form submission
 
+          // Send email using EmailJS
+          // 'this' refers to the form element (contact-form) that triggered the event
+          // it passes the form data to EmailJS
           emailjs.sendForm("service_exo1o3w", "template_2bz9tsp", this) // EmailJS Service and Template ID
             .then(function(response) {
               // Redirect to submit.html after successful submission
               window.location.href = "./submit.html"
             }, function(error) {
+              // Show error message if email fails to send
               alert("Oops! Something went wrong.");
             });
         });
