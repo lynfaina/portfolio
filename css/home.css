@@ -5,6 +5,15 @@
     background-color: #f5f5dc;
 }
 
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .attribute-credit {
     display: none;
 }
@@ -174,3 +183,139 @@ td img[src*='dancethumbnail.png'] {
     margin-right: 10px;
 }
 
+/* responsive: tablets */
+@media (max-width: 1024px) {
+    /* nav area */
+    #menu nav {
+        margin: 10px 15px;
+        padding: 10px 15px;
+    }
+
+    #menu img {
+        margin-right: 20px;
+    }
+
+    /* main table layout */
+    table {
+        width: 100%;
+        padding: 100px 20px 150px;
+        margin: 100px 0 150px;
+    }
+
+    th h1 {
+        font-size: 40px;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    th h2 {
+        font-size: 24px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    li {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .custom-line {
+        width: 100%;
+    }
+}
+
+/* responsive: mobile phones */
+@media (max-width: 768pxpx) {
+    /* stack nav, center everything */
+    #menu {
+        width: 100%;
+    }
+
+    #menu nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    #menu img {
+        margin-right: 0;
+    }
+
+    #menu nav a {
+        margin-right: 0;
+    }
+
+    /* make table sections stack vertically */
+    table {
+        display: block;
+        width: 100%;
+        padding: 90px 15px 80px; /* push down below fixed menu */
+        margin: 0;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th h1 {
+        font-size: 32px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    th h2 {
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    th img {
+        margin-top: 10px;
+    }
+
+    /* images full width on small screens */
+    td img[src*='flowerpainting'],
+    td img[src*='songcoverthbn.png'],
+    td img[src*='dancethumbnail.png'] {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    /* lists and links */
+    ul {
+        padding-left: 15px;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    td a {
+        padding: 10px 0 40px;
+        margin: 10px 0 40px;
+    }
+
+    .custom-line {
+        width: 100%;
+    }
+
+    /* footer stacked */
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 150px;
+        margin: 0;
+    }
+
+    .socials {
+        flex-wrap: wrap;
+    }
+}
