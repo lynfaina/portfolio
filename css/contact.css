@@ -3,6 +3,12 @@
 * {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5dc;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .attribute-credit {
@@ -13,7 +19,6 @@
 #menu img {
     height: 32px;
     width: 32px;
-    margin-right: 952px;
 }
 
 #menu nav {
@@ -30,25 +35,39 @@
     margin-right: 40px;
 }
 
+/* body section */
+#body {
+    min-height: 60vh;
+    padding: 20px 0;
+}
+
 /* opening greetings */
 h1 {
     font-size: 60px;
     text-align: left;
-    padding: 0px 10px 0px 30px;
-    margin: 0px 0px 0px 30px;
+    padding: 0px 10px 0px 60px;
+    margin: 20px 0px 40px 0px;
 }
 
 .container {
     display: flex;
     justify-content: flex-start;
-    gap: 310px;
-    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 0 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-container {
+    flex: 0 0 auto;
 }
 
 form {
     width: 100%; 
     max-width: 400px; 
     background-color: #ffffff;
+    padding: 30px;
     border: 12px solid #ffffff;
     border-radius: 10px;
 }
@@ -57,42 +76,52 @@ label {
     font-size: 17px;
     font-weight: bold;
     background-color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
 }
   
 input, textarea {
-    width: 300px;
+    width: 100%;
     padding: 10px;
-    margin: 5px 0 15px 0;
+    margin-bottom: 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #ffffff;
 }
   
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
 button {
     font-size: 17px;
     font-weight: bold;
-    width: 300px;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     background-color: #000;
     color: #000;
     border: solid;
     border-radius: 5px;
     cursor: pointer;
     background-color: #ffffff;
+    transition: all 0.3s ease;
 }
   
 button:hover {
     background-color: #444;
+    color: #fff;
+    border-color: #444;
 }
 
 .custom-line {
     border: none;
-    width: 1245px;
+    width: calc(100% - 120px);
+    max-width: 1245px;
     height: 2px;
     background-color: #000000;
-    margin-left: 60px;
-    text-align: left;
+    margin: 40px 60px;
 }
 
 /* footer */
@@ -102,6 +131,7 @@ button:hover {
     align-items: center;
     padding: 20px 30px;
     margin: 20px 30px;
+    flex-wrap: wrap;
 }
 
 /* portfolio user's name */
@@ -114,6 +144,7 @@ button:hover {
 .socials {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 /* footer */
@@ -125,4 +156,149 @@ button:hover {
     text-decoration: none;
     padding-right: 10px;
     margin-right: 10px;
+}
+
+/* responsive design - tablets */ 
+@media (max-width: 1024px) {
+    #menu nav {
+        padding: 15px 20px;
+        margin: 15px 20px;
+    }
+
+    #menu nav a {
+        margin-left: 25px;
+    }
+
+    h1 {
+        font-size: 48px;
+        padding-left: 40px;
+    }
+
+    .container {
+        gap: 60px;
+        padding: 0 40px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .custom-line {
+        width: calc(100% - 80px);
+        margin: 30px 40px;
+    }
+}
+
+/* responsive design - mobile phones */
+@media (max-width: 768px) {
+    #menu nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    #menu img {
+        margin-bottom: 10px;
+    }
+
+    #menu nav a {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding: 20px;
+        margin: 10px 0 30px 0;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .custom-line {
+        width: calc(100% - 40px);
+        margin: 30px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px 20px;
+        margin: 15px 0;
+    }
+
+    .socials {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .socials a {
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+}
+
+/* responsive design - small mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input, textarea {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .custom-line {
+        width: calc(100% - 30px);
+        margin: 20px 15px;
+    }
 }
