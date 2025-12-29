@@ -131,8 +131,7 @@ td img[src*='flowerpainting'] {
 
 .custom-line {
     border: none;
-    width: 100px;
-    max-width: 1225px;
+    width: 1225px;
     height: 2px;
     background-color: #000000;
 }
