@@ -30,6 +30,12 @@ body {
     margin:  20px 30px;
 }
 
+@media (max-width: 768px) {
+    menu nav {
+        justify-content: center !important;
+    }
+}
+
 #menu nav a {
     color: #000000;
     text-decoration: none;
@@ -181,8 +187,8 @@ p {
 
     #menu nav {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
         padding: 15px 0;
         margin: 0px;
         gap: 8px;
