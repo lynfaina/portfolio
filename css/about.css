@@ -175,12 +175,17 @@ p {
 
 /* responsive design - mobile phones */
 @media (max-width: 768px) {
+    #menu {
+        width: 100%;
+    }
+
     #menu nav {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
-        margin: 10px;
-        gap: 10px;
+        justify-content: center;
+        padding: 15px 0;
+        margin: 0px;
+        gap: 8px;
     }
 
     #menu img {
