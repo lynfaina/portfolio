@@ -1,10 +1,5 @@
 /* body */
 /* default font */
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
 * {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5dc;
@@ -28,6 +23,8 @@ img {
     position: fixed;
     top: 0px;
     left: 0px;
+    width: 100;
+    z-index: 1000;
 }
 
 /* menu icon */
@@ -57,6 +54,8 @@ table {
     text-align: left;
     padding: 120px 50px 300px;
     margin: 120px 50px 300px;
+    width: 100;
+    max-width: 1400px;
 }
 
 /* portfolio user's name */
@@ -132,7 +131,8 @@ td img[src*='flowerpainting'] {
 
 .custom-line {
     border: none;
-    width: 1225px;
+    width: 100px;
+    max-width: 1225px;
     height: 2px;
     background-color: #000000;
 }
@@ -209,19 +209,27 @@ td img[src*='dancethumbnail.png'] {
 
     th h1 {
         font-size: 40px;
-        padding-right: 0;
-        margin-right: 0;
+        padding-right: 20px;
+        margin-right: 20px;
     }
 
     th h2 {
         font-size: 24px;
-        padding-left: 0;
-        margin-left: 0;
+        padding-left: 20px;
+        margin-left: 20px;
     }
 
     li {
-        padding-right: 0;
-        margin-right: 0;
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+
+    td img[src*='dancethumbnail.png'] {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        padding: 20px;
+        margin: 20px;
     }
 
     .custom-line {
@@ -230,10 +238,11 @@ td img[src*='dancethumbnail.png'] {
 }
 
 /* responsive: mobile phones */
-@media (max-width: 768pxpx) {
+@media (max-width: 768px) {
     /* stack nav, center everything */
     #menu {
         width: 100%;
+        position: fixed;
     }
 
     #menu nav {
@@ -242,7 +251,7 @@ td img[src*='dancethumbnail.png'] {
         justify-content: center;
         gap: 8px;
         margin: 0;
-        padding: 10px 0;
+        padding: 15px 0;
     }
 
     #menu img {
@@ -257,7 +266,7 @@ td img[src*='dancethumbnail.png'] {
     table {
         display: block;
         width: 100%;
-        padding: 90px 15px 80px; /* push down below fixed menu */
+        padding: 180px 15px 80px; 
         margin: 0;
     }
 
@@ -270,12 +279,16 @@ td img[src*='dancethumbnail.png'] {
         font-size: 32px;
         text-align: left;
         margin-bottom: 10px;
+        padding-right: 0;
+        margin-right: 0;
     }
 
     th h2 {
         font-size: 20px;
         text-align: left;
         margin-bottom: 20px;
+        padding-left: 0;
+        margin-left: 0;
     }
 
     th img {
@@ -289,17 +302,23 @@ td img[src*='dancethumbnail.png'] {
         width: 100%;
         height: auto;
         padding: 10px 0;
-        margin: 0;
+        margin: 10px 0;
     }
 
     /* lists and links */
     ul {
-        padding-left: 15px;
+        padding-left: 20px;
     }
 
     li {
         font-size: 16px;
         line-height: 22px;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    li br {
+        display: none;
     }
 
     td a {
@@ -316,8 +335,8 @@ td img[src*='dancethumbnail.png'] {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-        padding: 150px;
-        margin: 0;
+        padding: 15px;
+        margin: 10;
     }
 
     .socials {

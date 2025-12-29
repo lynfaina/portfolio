@@ -60,7 +60,8 @@ h2 {
 
 .custom-line {
     border: none;
-    width: 1245px;
+    width: 100%;
+    max-width: 1245px;
     height: 2px;
     background-color: #000000;
     margin-left: 60px;
@@ -95,4 +96,111 @@ h2 {
     text-decoration: none;
     padding-right: 10px;
     margin-right: 10px;
+}
+
+/* responsive design - tablets */
+@media (max-width: 1024px) {
+    #menu img {
+        margin-right: 400px;
+    }
+
+    #menu nav {
+        padding: 15px 20px;
+        margin: 15px 20px;
+    }
+
+    #menu nav a {
+        margin-right: 25px;
+    }
+
+    h1 {
+        font-size: 48px;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+
+    h2 {
+        font-size: 48px;
+        margin-bottom: 100px;
+    }
+
+    .container {
+        gap: 100px;
+        padding: 0 20px;
+    }
+
+    .custom-line {
+        width: 90%;
+        margin-left: 40px;
+    }
+}
+
+/* responsive design - mobile phones */
+@media (max-width: 768px) {
+    #menu nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #menu img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .submit-container {
+        max-width: 100%;
+    }
+
+    .custom-line {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .socials {
+        flex-wrap: wrap;
+    }
+
+    .socials a {
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+}
+
+/* responsive design - small mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
 }
