@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    padding 0;
+    padding: 0;
 }
 
 .attribute-credit {
@@ -19,6 +19,7 @@ body {
 #menu img {
     height: 32px;
     width: 32px;
+    margin-right: auto;
 }
 
 #menu nav {
@@ -54,7 +55,7 @@ h1 {
 /* operator's profile picture */
 .image-cell img {
     width: 100%;
-    max-width: 420px;
+    max-width: 520px;
     height: auto;
 }
 
@@ -184,6 +185,7 @@ p {
 
     #menu img {
         margin-bottom: 10px;
+        margin-right: 0;
     }
 
     #menu nav a {
