@@ -52,7 +52,7 @@ table {
 
 /* opening greetings */
 h1 {
-    font-size: 60px;
+    font-size: 40px;
     text-align: left;
     padding: 0px 10px 0px 60px;
     margin: 20px 0px;
@@ -67,7 +67,7 @@ h1 {
 
 .image-cell {
     text-align: center;
-    vertical-align: top;
+    vertical-align: middle;
     padding: 20px;
 }
 
